@@ -1,4 +1,4 @@
---logging table w/ log ID
+
 
 USE Ridgemont_Syncstore;
 
@@ -322,9 +322,7 @@ EXEC ops.;
 Run_Job_Pipeline
 SELECT * FROM ops.SyncRunLog ORDER BY LogID DESC;
 
-SELECT COLUMN_NAME
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'SyncRunLog';
+
 
 
 
